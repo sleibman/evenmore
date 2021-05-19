@@ -1,6 +1,6 @@
 import {
   container,
-  defaultFont,
+  // defaultFont,
   primaryColor,
   infoColor,
   successColor,
@@ -13,6 +13,7 @@ import {
 } from "assets/jss/material-kit-react.js";
 
 const headerStyle = {
+  "@import": "url(https://fonts.googleapis.com/css?family=Vibur:400)",
   appBar: {
     display: "flex",
     border: "0",
@@ -52,9 +53,13 @@ const headerStyle = {
     flex: 1,
   },
   title: {
-    ...defaultFont,
+    // ...defaultFont,
+    fontFamily: '"Vibur", sans-serif',
+    textShadow:
+      "0 0 7px #fff, 0 0 10px #fff,0 0 21px #fff,0 0 42px #0fa,0 0 82px #0fa,0 0 92px #0fa,0 0 102px #0fa,0 0 151px #0fa",
+
     lineHeight: "30px",
-    fontSize: "18px",
+    fontSize: "58px",
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",
